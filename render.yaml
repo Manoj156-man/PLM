@@ -1,11 +1,11 @@
-services:
+databases:
   # 1. PostgreSQL Database
-  - type: pgo
-    name: plmdb
+  - name: plmdb
     databaseName: plmdb
     user: postgres
     plan: free
 
+services:
   # 2. FastAPI Backend
   - type: web
     name: plm-backend
